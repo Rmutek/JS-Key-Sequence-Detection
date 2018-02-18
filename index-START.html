@@ -18,8 +18,9 @@
 		
   		arrayOfKeys.push(e.key);
   		arrayOfKeys.splice(-secrectCode.length -1, arrayOfKeys.length - secrectCode.length);
-  		if(arrayOfKeys.join) {
-  			
+  		if(arrayOfKeys.join('').includes(secrectCode)) {
+  			console.log("You are the WINNER!!!!");
+  			cornify_add();
   		}
   		console.log(arrayOfKeys);
   	};
