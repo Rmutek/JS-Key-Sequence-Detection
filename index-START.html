@@ -6,7 +6,27 @@
   <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
 </head>
 <body>
-<script>
+<script>  	
+  	
+	const arrayOfKeys = [];
+	const secrectCode = 'becsiscool';
+
+  	window.addEventListener('keyup', logKey);
+  	
+  	function logKey(e) {
+  		console.log(e.key)
+		
+  		arrayOfKeys.push(e.key);
+  		arrayOfKeys.splice(-secrectCode.length -1, arrayOfKeys.length - secrectCode.length);
+  		if(arrayOfKeys.join) {
+  			
+  		}
+  		console.log(arrayOfKeys);
+  	};
+
+
+
+
 </script>
 </body>
 </html>
